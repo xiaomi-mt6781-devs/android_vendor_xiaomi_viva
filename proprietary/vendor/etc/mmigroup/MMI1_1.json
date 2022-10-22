@@ -1,0 +1,33 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "SimCard_HotPlug"
+    },
+    {
+      "showName": "Sdcard_Intent"
+    },
+    {
+      "showName": "WlanAddress"
+    },
+    {
+      "showName": "BluetoothAddress"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "lcd_pic": [
+          "03_R255=2000",
+          "04_G255=2000",
+          "05_B255=2000",
+          "07_W0=2000",
+          "01_W255=2000",
+          "W128=2000"
+        ]
+      }
+    }
+  ]
+}
