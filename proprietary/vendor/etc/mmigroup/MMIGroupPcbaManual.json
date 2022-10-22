@@ -1,0 +1,135 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+	{
+      "showName": "SimCard_HotPlug"
+    },
+	{
+      "showName": "Sdcard_Intent"
+    },
+    {
+      "showName": "KeyPad"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "lcd_pic": [
+          "03_R255=2000",
+          "04_G255=2000",
+          "05_B255=2000"
+        ]
+      }
+    },
+	{
+      "showName": "TouchPanel"
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName": "DepthCamera"
+    },
+    {
+      "showName": "WideCamera"
+    },
+    {
+      "showName": "MacroCamera"
+    },
+    {
+      "showName": "DualBackCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+	{
+      "showName": "LightTEST"
+    },
+    {
+      "showName": "Charge"
+    },
+    {
+      "showName": "Wlan"
+    },
+    {
+      "showName": "Bluetooth"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "OTG"
+    },
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": true,
+        "support_axialresult": true,
+        "support_angle45": false,
+        "support_angleneg45": false,
+        "is_auto_calibrate": false,
+        "support_plus_or_minus_45_degrees_either_pass_through": false,
+        "autoTest": {
+          "support_calibrate": false
+        }
+      }
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_draw": false,
+        "support_test": true,
+        "self_calibrate": false
+      }
+    },
+	{
+      "showName": "Optical"
+    },
+    {
+      "showName": "Speaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "ReceiverLouder"
+    },
+    {
+      "showName": "MainMicToHeadPhone"
+    },
+    {
+      "showName": "SubMicToHeadPhone"
+    },
+    {
+      "showName": "HeadSet"
+    },
+	{
+      "showName": "FM"
+    },
+    {
+      "showName": "fingerprint",
+      "paramconfig": {
+	    "support_enrolTest_quality":false,
+        "support_enrolTest": false,
+        "support_identifyTest": false
+      }
+    },
+	{
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    }
+  ]
+}
