@@ -6,15 +6,29 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/viva
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/viva/proprietary/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcomutils.so \
+    vendor/xiaomi/viva/proprietary/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma.so \
+    vendor/xiaomi/viva/proprietary/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_adapt.so \
+    vendor/xiaomi/viva/proprietary/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_rtp.so \
+    vendor/xiaomi/viva/proprietary/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_socketwrapper.so \
+    vendor/xiaomi/viva/proprietary/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_service.so \
+    vendor/xiaomi/viva/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
+    vendor/xiaomi/viva/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
+    vendor/xiaomi/viva/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
+    vendor/xiaomi/viva/proprietary/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsignal.so \
+    vendor/xiaomi/viva/proprietary/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsink.so \
+    vendor/xiaomi/viva/proprietary/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsource.so \
+    vendor/xiaomi/viva/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
+    vendor/xiaomi/viva/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
+    vendor/xiaomi/viva/proprietary/lib64/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvsim-adaptor-client.so \
+    vendor/xiaomi/viva/proprietary/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvt_avsync.so \
+    vendor/xiaomi/viva/proprietary/system/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
+    vendor/xiaomi/viva/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    vendor/xiaomi/viva/proprietary/system/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/xiaomi/viva/proprietary/vendor/bin/AgentTest:$(TARGET_COPY_OUT_VENDOR)/bin/AgentTest \
-    vendor/xiaomi/viva/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
-    vendor/xiaomi/viva/proprietary/vendor/bin/aee_aedv64:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv64 \
-    vendor/xiaomi/viva/proprietary/vendor/bin/aee_dumpstatev:$(TARGET_COPY_OUT_VENDOR)/bin/aee_dumpstatev \
-    vendor/xiaomi/viva/proprietary/vendor/bin/aeev:$(TARGET_COPY_OUT_VENDOR)/bin/aeev \
     vendor/xiaomi/viva/proprietary/vendor/bin/atci_service:$(TARGET_COPY_OUT_VENDOR)/bin/atci_service \
     vendor/xiaomi/viva/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
     vendor/xiaomi/viva/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
-    vendor/xiaomi/viva/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/xiaomi/viva/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/viva/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
     vendor/xiaomi/viva/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
@@ -34,7 +48,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
     vendor/xiaomi/viva/proprietary/vendor/bin/gbe:$(TARGET_COPY_OUT_VENDOR)/bin/gbe \
     vendor/xiaomi/viva/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi \
@@ -46,16 +59,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service-lazy \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.aee@1.1-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.mediatek.hardware.charge@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.charge@1.0-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service \
@@ -66,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.microtrust.hardware.thh@2.0-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/xiaomi/viva/proprietary/vendor/bin/init_thh:$(TARGET_COPY_OUT_VENDOR)/bin/init_thh \
     vendor/xiaomi/viva/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
     vendor/xiaomi/viva/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
@@ -75,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/lib3a.ccu.ddr:$(TARGET_COPY_OUT_VENDOR)/bin/lib3a.ccu.ddr \
     vendor/xiaomi/viva/proprietary/vendor/bin/lib3a.ccu.dm:$(TARGET_COPY_OUT_VENDOR)/bin/lib3a.ccu.dm \
     vendor/xiaomi/viva/proprietary/vendor/bin/lib3a.ccu.pm:$(TARGET_COPY_OUT_VENDOR)/bin/lib3a.ccu.pm \
-    vendor/xiaomi/viva/proprietary/vendor/bin/loghidlvendorservice:$(TARGET_COPY_OUT_VENDOR)/bin/loghidlvendorservice \
     vendor/xiaomi/viva/proprietary/vendor/bin/md_monitor:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor \
     vendor/xiaomi/viva/proprietary/vendor/bin/md_monitor_ctrl:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor_ctrl \
     vendor/xiaomi/viva/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
@@ -114,15 +121,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/xiaomi/viva/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
     vendor/xiaomi/viva/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
-    vendor/xiaomi/viva/proprietary/vendor/bin/wpa_cli:$(TARGET_COPY_OUT_VENDOR)/bin/wpa_cli \
     vendor/xiaomi/viva/proprietary/vendor/bin/xcap:$(TARGET_COPY_OUT_VENDOR)/bin/xcap \
     vendor/xiaomi/viva/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/SVIConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/SVIConfig.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/aee-commit:$(TARGET_COPY_OUT_VENDOR)/etc/aee-commit \
-    vendor/xiaomi/viva/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
     vendor/xiaomi/viva/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2205:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2205 \
     vendor/xiaomi/viva/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2205_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2205_ENUM \
     vendor/xiaomi/viva/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
@@ -294,8 +298,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc \
@@ -309,8 +311,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
@@ -323,7 +323,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/gbe.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gbe.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
@@ -353,21 +352,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/mtk_pkm_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_pkm_service.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/mtklog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtklog.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/vendor.mediatek.hardware.charge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.charge@1.0-service.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
@@ -453,15 +449,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/viva/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/xiaomi/viva/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
-    vendor/xiaomi/viva/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
-    vendor/xiaomi/viva/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    vendor/xiaomi/viva/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
-    vendor/xiaomi/viva/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/xiaomi/viva/proprietary/vendor/etc/security/cacerts/01419da9.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/01419da9.0 \
     vendor/xiaomi/viva/proprietary/vendor/etc/security/cacerts/04f60c28.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/04f60c28.0 \
     vendor/xiaomi/viva/proprietary/vendor/etc/security/cacerts/0d69c7e1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts/0d69c7e1.0 \
@@ -630,8 +618,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/viva/proprietary/vendor/etc/thermal-youtube.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-youtube.conf \
     vendor/xiaomi/viva/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
-    vendor/xiaomi/viva/proprietary/vendor/etc/ultrasound.wav:$(TARGET_COPY_OUT_VENDOR)/etc/ultrasound.wav \
-    vendor/xiaomi/viva/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -879,7 +865,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_wifi_2a_1_hdr.bin \
     vendor/xiaomi/viva/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/xiaomi/viva/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/xiaomi/viva/proprietary/vendor/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/fstab.enableswap \
     vendor/xiaomi/viva/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
@@ -900,31 +885,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/hi1634q_front_qtech_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/hi1634q_front_qtech_mipi_raw_IdxMgr.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hi1634q_front_qtech_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/hi1634q_front_qtech_mipi_raw_tuning.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/audio.primary.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/audio.r_submix.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6781.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/consumerir.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.common.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/thermal.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.charge@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.charge@1.0-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
@@ -943,218 +912,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.lce.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Flash_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Scene_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Scene_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroaacmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroaacmipiraw_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Flash_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Scene_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_gc02m1macroofilmmipiraw_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc02m1macroofilmmipiraw_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_3rd_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_3rd_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_FrontLight_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_FrontLight_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_FrontLight_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_FrontLight_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Panorama_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Portrait_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Portrait_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Capture_xts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Capture_xts.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Slow_Motion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Slow_Motion.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Video_1080P_30fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontofilmmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontofilmmipiraw_Video_720P_30fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_3rd_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_3rd_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_FrontLight_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_FrontLight_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_FrontLight_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_FrontLight_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Panorama_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Portrait_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Portrait_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Capture_xts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Capture_xts.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Slow_Motion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Slow_Motion.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Video_1080P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Video_1080P_30fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_hi1634qfrontqtechmipiraw_Video_720P_30fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_hi1634qfrontqtechmipiraw_Video_720P_30fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_EIS_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_EIS_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_EIS_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_EIS_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Face_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Flash_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_HDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_HDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_LLHDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_LLHDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_LLHDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_LLHDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Portrait_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Portrait_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Portrait_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Portrait_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Professional_Zoom_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Professional_Zoom_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Professional_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Professional_Zoom_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_SuperNightRaw_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_SuperNightRaw_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_SuperNightRaw_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_SuperNightRaw_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom1_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom1_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom1_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom1_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom2_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom2_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom2_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom2_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_imx355ultrasunnymipiraw_Zoom_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_imx355ultrasunnymipiraw_Zoom_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthsunnymipiraw_Default_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthsunnymipiraw_Default_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthsunnymipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthsunnymipiraw_Default_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthsunnymipiraw_portrait_Capture_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthsunnymipiraw_portrait_Capture_depth.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthsunnymipiraw_portrait_preview_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthsunnymipiraw_portrait_preview_depth.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthtrulymipiraw_Default_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthtrulymipiraw_Default_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthtrulymipiraw_Default_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthtrulymipiraw_Default_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthtrulymipiraw_portrait_Capture_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthtrulymipiraw_portrait_Capture_depth.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov02b1bdepthtrulymipiraw_portrait_preview_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov02b1bdepthtrulymipiraw_portrait_preview_depth.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Defalut_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Flah_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Flah_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Flah_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Flah_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_HDR_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_LLHDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_LLHDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_SuperNight_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_SuperNight_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_SuperNight_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_SuperNight_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Video_1080p.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_ov8856ultraaacmipiraw_Video_720p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov8856ultraaacmipiraw_Video_720p.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_3rd_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture_108M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture_108M.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Face_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview_zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview_zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Flash_A_Preview_zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Face_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Face_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_HDR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_LLHDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_LLHDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_LLHDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_LLHDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Panorama_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_QQ_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_QQ_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_108M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_108M.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_xts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Capture_xts.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_FullScale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_FullScale.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Scene_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightRaw_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightRaw_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightRaw_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightRaw_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightSE_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_SuperNightSE_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_EIS_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_1080P_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_120fps_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_EIS_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_720P_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_Video_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_WeChatQQ_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_WeChatQQ_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_WeChat_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_WeChat_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_XTS_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_XTS_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_portrait_capture_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_portrait_capture_full.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainofilmmipiraw_portrait_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainofilmmipiraw_portrait_preview_full.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_3rd_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture_108M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture_108M.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Face_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview_zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview_zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview_zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Flash_A_Preview_zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Face_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Face_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_HDR_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_LLHDR_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_LLHDR_Face_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_LLHDR_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_LLHDR_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Panorama_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Panorama_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_QQ_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_QQ_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_108M.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_108M.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_CE.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_CE.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_xts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Capture_xts.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_FullScale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_FullScale.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Preview_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Professional_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Professional_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Professional_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Scene_Professional_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightRaw_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightRaw_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightRaw_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightRaw_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightSE_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_SuperNightSE_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_EIS_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_1080P_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_120fps_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_EIS_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_Zoom1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_Zoom1.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_Zoom2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_720P_Zoom2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_Video_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_WeChatQQ_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_WeChatQQ_Video.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_WeChat_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_WeChat_Preview.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_XTS_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_XTS_Capture.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_portrait_capture_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_portrait_capture_full.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libCamera_s5khm2sdmainsunnymipiraw_portrait_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5khm2sdmainsunnymipiraw_portrait_preview_full.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
@@ -1208,32 +965,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_hw_test.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_relayer.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.log.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.nvram.50.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.hwintegration.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.iopipe.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.dngop.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.fdft.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.mfnr.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.platform.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.platform2.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamdrv_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_imem.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_isp.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_tuning_mgr.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_twin.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.camera.3a.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.camera.isp.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.lens.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libcapctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapctrl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
@@ -1302,7 +1037,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfllcore.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libmifpext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmifpext.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
@@ -1359,8 +1093,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpixelflinger.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
@@ -1404,7 +1136,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/libvt_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvt_custom.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwapi.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeybox.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/libwvkeyboxext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeyboxext.so \
@@ -1475,8 +1206,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/audio.primary.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6781.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/audio.r_submix.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/consumerir.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.common.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/fingerprint.fpc.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/fingerprint.goodix.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.mt6781.so \
@@ -1490,7 +1219,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.elliptic.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/sensors.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6781.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/thermal.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
@@ -1804,27 +1532,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_core.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libasn1c_mapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mapi.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1c_mdmi.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentengine_vendor.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocomponentenginec.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaurisysdemo.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libawinicsmartpaparse.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_relayer.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetoothem_mtk.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
@@ -1980,7 +1694,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libmi_videofilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmi_videofilter.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libmibokeh_mt6873.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mt6873.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libmifpext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmifpext.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
@@ -2147,10 +1860,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_rtdof.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwa_widelens_undistort.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_widelens_undistort.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwapi.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpfa.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeybox.so \
@@ -2173,11 +1884,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/s5khm2sd_main_ofilm_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5khm2sd_main_ofilm_mipi_raw_tuning.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/s5khm2sd_main_sunny_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5khm2sd_main_sunny_mipi_raw_IdxMgr.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/s5khm2sd_main_sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5khm2sd_main_sunny_mipi_raw_tuning.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.aee@1.0.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.aee@1.1.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/vendor.mediatek.hardware.charge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.charge@1.0.so \
@@ -2233,14 +1940,22 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libtinycompress \
+    libwifi-hal-mtk \
+    ImsService \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-ims-legacy \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
+    mediatek-wfo-legacy \
     com.fingerprints.extension \
-    com.fingerprints.fpmmi \
     android.hardware.dumpstate@1.1-service.xiaomi \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     android.hardware.usb@1.2-service-mediatekv2 \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi.supplicant \
-    android.hardware.wifi@1.0-service \
     gnss-default \
     gnss@2.1-service \
     lbs_hidl_service@1.0 \
