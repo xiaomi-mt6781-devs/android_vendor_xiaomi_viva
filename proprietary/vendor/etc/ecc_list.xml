@@ -380,6 +380,7 @@
     <EccEntry Ecc="113" Category="0" Condition="1" Plmn="510 FFF"/>
     <EccEntry Ecc="110" Category="1" Condition="1" Plmn="510 01"/>
     <EccEntry Ecc="110" Category="0" Condition="1" Plmn="510 11"/>
+    <EccEntry Ecc="123" Category="0" Condition="2" Plmn="510 01"/>
     <EccEntry Ecc="129" Category="0" Condition="1" Plmn="510 01"/>
     <EccEntry Ecc="117" Category="0" Condition="1" Plmn="510 11"/>
 
@@ -401,9 +402,11 @@
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="334 FFF"/>
 
     <!-- Peru operator-->
-    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 FFF"/>
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="716 FFF"/>
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn="716 FFF"/>
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 06"/>
+    <EccEntry Ecc="105" Category="0" Condition="1" Plmn="716 10"/>
+    <EccEntry Ecc="000" Category="0" Condition="0" Plmn="716 17"/>
 
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn="234 FFF"/>
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn="234 FFF"/>
@@ -672,6 +675,13 @@
     <EccEntry Ecc="102" Category="0" Condition="2" Plmn="255 03"/>
     <EccEntry Ecc="103" Category="0" Condition="2" Plmn="255 03"/>
 
+    <!-- Add for Macao operator -->
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="993" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="110" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="120" Category="0" Condition="1" Plmn="455 FFF"/>
+    <EccEntry Ecc="119" Category="0" Condition="1" Plmn="455 FFF"/>
+
     <!-- Add for Cambodia operator -->
     <EccEntry Ecc="117" Category="0" Condition="2" Plmn = "456 FFF" />
     <EccEntry Ecc="118" Category="0" Condition="2" Plmn = "456 FFF" />
@@ -710,10 +720,18 @@
     <EccEntry Ecc="190" Category="0" Condition="2" Plmn="604 FFF"/>
 
      <!--add for Nigeria-->
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="621 20"/>
     <EccEntry Ecc="767" Category="0" Condition="1" Plmn="621 20"/>
+    <EccEntry Ecc="122" Category="0" Condition="1" Plmn="621 30"/>
     <EccEntry Ecc="767" Category="0" Condition="1" Plmn="621 30"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="621 50"/>
     <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 50"/>
+    <EccEntry Ecc="122" Category="0" Condition="2" Plmn="621 60"/>
     <EccEntry Ecc="767" Category="0" Condition="2" Plmn="621 60"/>
+
+    <!-- Add for Pakistan operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn="238 FFF"/>
+    <EccEntry Ecc="113" Category="2" Condition="1" Plmn="238 FFF"/>
 
     <EccEntry Ecc="17" Category="1" Condition="1" Plmn="647 00"/>
     <EccEntry Ecc="18" Category="4" Condition="1" Plmn="647 00"/>
