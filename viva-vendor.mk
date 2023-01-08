@@ -1986,6 +1986,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 
 PRODUCT_PACKAGES += \
+    libfmjni \
     libtinycompress \
     libwifi-hal-mtk \
     ImsService \
