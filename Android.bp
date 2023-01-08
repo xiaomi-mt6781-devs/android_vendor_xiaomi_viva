@@ -184,6 +184,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_media_c2_V1_1_default",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "power-default",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/power-default.xml",
