@@ -1193,7 +1193,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/HEVCSecureVdecCA.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/android.hardware.power-service-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.power-service-mediatek.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
@@ -1822,7 +1821,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpkm.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpn557_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpn557_fw.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhal.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_cust_base.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
@@ -1988,6 +1986,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libfmjni \
     libtinycompress \
+    libpowerhal \
     libwifi-hal-mtk \
     ImsService \
     mediatek-common \
@@ -2008,5 +2007,4 @@ PRODUCT_PACKAGES += \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
-    manifest_media_c2_V1_1_default \
-    power-default
+    manifest_media_c2_V1_1_default

@@ -42,6 +42,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libpowerhal",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libpowerhal.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libwifi-hal-mtk",
 	owner: "xiaomi",
 	strip: {
@@ -203,15 +220,6 @@ prebuilt_etc_xml {
 	name: "manifest_media_c2_V1_1_default",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "power-default",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/power-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
