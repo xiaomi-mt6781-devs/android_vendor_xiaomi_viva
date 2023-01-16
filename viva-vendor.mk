@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/lib64/libvsim-adaptor-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvsim-adaptor-client.so \
     vendor/xiaomi/viva/proprietary/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvt_avsync.so \
     vendor/xiaomi/viva/proprietary/system/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
-    vendor/xiaomi/viva/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    vendor/xiaomi/viva/proprietary/system/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \
     vendor/xiaomi/viva/proprietary/system/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/xiaomi/viva/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/xiaomi/viva/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
@@ -54,7 +54,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service.beanpod \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
-    vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
     vendor/xiaomi/viva/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
@@ -105,7 +104,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
     vendor/xiaomi/viva/proprietary/vendor/bin/thermal_manager:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_manager \
     vendor/xiaomi/viva/proprietary/vendor/bin/thermalloadalgod:$(TARGET_COPY_OUT_VENDOR)/bin/thermalloadalgod \
-    vendor/xiaomi/viva/proprietary/vendor/bin/vib_cal:$(TARGET_COPY_OUT_VENDOR)/bin/vib_cal \
     vendor/xiaomi/viva/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
     vendor/xiaomi/viva/proprietary/vendor/bin/volte_imcb:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imcb \
     vendor/xiaomi/viva/proprietary/vendor/bin/volte_imsm_93:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imsm_93 \
@@ -301,7 +299,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
@@ -878,11 +875,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/audio.primary.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/audio.r_submix.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6781.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib/hw/gralloc.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib/hw/memtrack.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6781.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib/hw/sound_trigger.primary.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib/hw/vendor.mediatek.hardware.charge@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.charge@1.0-impl.so \
@@ -1216,19 +1213,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/consumerir.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.common.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/fingerprint.fpc.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/fingerprint.goodix.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/gralloc.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/hwcomposer.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.default.so \
-    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/memtrack.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt6781.so \
+    vendor/xiaomi/viva/proprietary/vendor/lib64/hw/power.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.elliptic.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/sensors.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6781.so \
     vendor/xiaomi/viva/proprietary/vendor/lib64/hw/thermal.mt6781.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.mt6781.so \
@@ -2002,9 +1998,9 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
     android.hardware.usb@1.2-service-mediatekv2 \
-    gnss-default \
+    gnss-mediatek \
     gnss@2.1-service \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
-    manifest_media_c2_V1_1_default
+    manifest_media_c2_V1_1_mediatek
