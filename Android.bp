@@ -23829,33 +23829,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libwifitest",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwifitest.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: true,
-	allow_undefined_symbols: false,
-	shared_libs: [
-		"libcutils",
-		"libnvram",
-		"liblog",
-		"libc++",
-		"libc",
-		"libm",
-		"libdl",
-	],
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libwpfa",
 	owner: "xiaomi",
 	strip: {
@@ -24353,34 +24326,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: true,
-	allow_undefined_symbols: false,
-	shared_libs: [
-		"libhidlbase",
-		"liblog",
-		"libutils",
-		"libcutils",
-		"libc++",
-		"libc",
-		"libm",
-		"libdl",
-	],
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.atci@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -26848,24 +26793,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-	name: "atci_service",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/atci_service.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
-prebuilt_etc {
-	name: "atcid",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/atcid.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
-prebuilt_etc {
 	name: "bootperf",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/init/bootperf.rc",
@@ -28325,69 +28252,6 @@ cc_prebuilt_binary {
 		"libdl",
 	],
 	compile_multilib: "64",
-}
-
-cc_prebuilt_binary {
-	name: "atci_service",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/atci_service"],
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	check_elf_files: true,
-	allow_undefined_symbols: false,
-	shared_libs: [
-		"libcutils",
-		"libutils",
-		"liblog",
-		"libhidlbase",
-		"libhidlmemory",
-		"android.hidl.allocator@1.0",
-		"android.hidl.memory@1.0",
-		"vendor.mediatek.hardware.camera.ccap@1.0",
-		"vendor.mediatek.hardware.pq@2.0",
-		"libnvram",
-		"libdl",
-		"libc++",
-		"libc",
-		"libm",
-	],
-	compile_multilib: "64",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "atcid",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/atcid"],
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	check_elf_files: true,
-	allow_undefined_symbols: false,
-	shared_libs: [
-		"libmtkcutils",
-		"libmtkutils",
-		"libmtkrillog",
-		"libmtkproperty",
-		"vendor.mediatek.hardware.atci@1.0",
-		"libhidlbase",
-		"libhidltransport",
-		"libhwbinder",
-		"libnvram",
-		"libfile_op",
-		"libmipc",
-		"libtrm",
-		"libwifitest",
-		"libc++",
-		"libc",
-		"libm",
-		"libdl",
-	],
-	compile_multilib: "64",
-	soc_specific: true,
 }
 
 cc_prebuilt_binary {

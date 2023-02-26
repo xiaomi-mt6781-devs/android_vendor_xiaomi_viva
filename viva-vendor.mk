@@ -1208,7 +1208,6 @@ PRODUCT_PACKAGES += \
     libwa_rtdof \
     libwa_widelens_undistort \
     libwifi-hal-mtk \
-    libwifitest \
     libwpfa \
     libmtkcam_streaminfo_plugin-p1stt \
     nwk_opt_imp \
@@ -1223,7 +1222,6 @@ PRODUCT_PACKAGES += \
     s5khm2sd_main_sunny_mipi_raw_IdxMgr \
     s5khm2sd_main_sunny_mipi_raw_tuning \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.atci@1.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
@@ -1447,8 +1445,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.2-service-mediatekv2 \
-    atci_service \
-    atcid \
     bootperf \
     camerahalserver \
     dmc_core \
@@ -1613,8 +1609,6 @@ PRODUCT_PACKAGES += \
     wfd_source_capability \
     xgf \
     vtservice \
-    atci_service \
-    atcid \
     batterysecret \
     bip \
     bp_kmsetkey_ca \
