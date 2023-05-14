@@ -4463,33 +4463,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmtk_bsg",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmtk_bsg.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmtk_bsg.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: true,
-	allow_undefined_symbols: false,
-	shared_libs: [
-		"libc++",
-		"libc",
-		"libm",
-		"libdl",
-	],
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmtkares",
 	owner: "xiaomi",
 	strip: {
@@ -26964,24 +26937,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-	name: "init.viva.nfc",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/init.viva.nfc.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
-prebuilt_etc {
-	name: "init.viva.se",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/init/init.viva.se.rc",
-	filename_from_src: true,
-	sub_dir: "init",
-	soc_specific: true,
-}
-
-prebuilt_etc {
 	name: "init.volte_imcb",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/init/init.volte_imcb.rc",
@@ -29706,14 +29661,14 @@ cc_prebuilt_binary {
 		none: true,
 	},
 	prefer: true,
-	check_elf_files: false,
+	check_elf_files: true,
 	allow_undefined_symbols: false,
 	shared_libs: [
 		"libcutils",
 		"liblog",
 		"libutils",
 		"libandroid_net",
-		"libcrypto-v32",
+		"libcrypto",
 		"libexpat",
 		"libssl",
 		"libc++",
@@ -30447,18 +30402,5 @@ cc_prebuilt_library_shared {
     },
     check_elf_files: false,
     compile_multilib: "both",
-    vendor_available: true
-}
-cc_prebuilt_library_shared {
-    name: "libcrypto-v32",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: { srcs: ["proprietary/vndk/v32/arm64/libcrypto-v32.so"] },
-        
-    },
-    check_elf_files: false,
-    compile_multilib: "64",
     vendor_available: true
 }

@@ -560,7 +560,6 @@ PRODUCT_PACKAGES += \
     libmp3dec_mtk \
     libmsbc_mtk \
     libmtcloader \
-    libmtk_bsg \
     libmtkares \
     libmtkcutils \
     libmtkhardware_legacy \
@@ -1464,8 +1463,6 @@ PRODUCT_PACKAGES += \
     init.thermal \
     init.thermal_manager \
     init.thermalloadalgod \
-    init.viva.nfc \
-    init.viva.se \
     init.volte_imcb \
     init.volte_imsm_93 \
     init.volte_md_status \
