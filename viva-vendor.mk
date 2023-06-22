@@ -577,7 +577,6 @@ PRODUCT_PACKAGES += \
     libnotifyaudiohal \
     libnvram \
     libnvram_sec \
-    libnwk_opt_halwrap_vendor \
     liboemcrypto \
     libperfctl_vendor \
     libpixelflinger \
@@ -612,13 +611,11 @@ PRODUCT_PACKAGES += \
     libvcodecdrv_header_stub \
     libverno \
     libvpu5 \
-    libwapi \
     libwo \
     libwvhidl \
     libwvkeybox \
     libwvkeyboxext \
     libwvdrmengine \
-    meta_wifi_data \
     libdpframework \
     libmtk_drvb \
     libnir_neon_driver \
@@ -640,7 +637,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
-    vendor.mediatek.hardware.nwk_opt@1.0 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.10 \
@@ -709,8 +705,6 @@ PRODUCT_PACKAGES += \
     hi1634q_front_qtech_mipi_raw_IdxMgr \
     hi1634q_front_qtech_mipi_raw_tuning \
     android.hardware.camera.provider@2.6-impl-mediatek \
-    android.hardware.gnss-impl-mediatek \
-    android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.thermal@2.0-impl \
     consumerir.common \
@@ -1206,10 +1200,8 @@ PRODUCT_PACKAGES += \
     libwa_refocus \
     libwa_rtdof \
     libwa_widelens_undistort \
-    libwifi-hal-mtk \
     libwpfa \
     libmtkcam_streaminfo_plugin-p1stt \
-    nwk_opt_imp \
     ov02b1b_depth_sunny_mipi_raw_IdxMgr \
     ov02b1b_depth_sunny_mipi_raw_tuning \
     ov02b1b_depth_truly_mipi_raw_IdxMgr \
@@ -1436,14 +1428,12 @@ PRODUCT_PACKAGES += \
     agps_profiles_conf2_carrier_Verizon_Wireless \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
-    android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.1-service.beanpod \
     android.hardware.media.c2@1.2-mediatek \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
-    android.hardware.usb@1.2-service-mediatekv2 \
     bootperf \
     camerahalserver \
     dmc_core \
@@ -1494,7 +1484,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0-init \
     vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-sevice \
-    vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.thh@2.0-service \
     volte_clientapi_ua \
@@ -1592,9 +1581,6 @@ PRODUCT_PACKAGES += \
     thermal-youtube \
     thermald-devices \
     android.hardware.neuralnetworks@1.3-service-mtk-gpu \
-    android.hardware.usb@1.2-service-mediatekv2.xml \
-    gnss-mediatek \
-    gnss@2.1-service \
     lbs_hidl_service@1.0 \
     manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
@@ -1625,7 +1611,6 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
-    android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.1-service.beanpod \
     android.hardware.media.c2@1.2-mediatek \
@@ -1633,7 +1618,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
-    android.hardware.usb@1.2-service-mediatekv2 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1642,7 +1626,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
-    vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.thh@2.0-service \
     vtservice_hidl \
