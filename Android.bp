@@ -14402,6 +14402,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcom.xiaomi.pluginutils",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcom.xiaomi.pluginutils.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcomposer_ext",
     owner: "xiaomi",
     strip: {
@@ -16124,33 +16151,53 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libsync",
                 "libutils",
                 "libcutils",
                 "libhardware",
                 "libnativewindow",
                 "libEGL",
-                "libion",
                 "libGLESv2",
                 "libgralloc_extra",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmialgoengine2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmialgoengine2.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libnativewindow",
+                "libhardware",
+                "libcom.xiaomi.pluginutils",
+                "libsync",
+                "libEGL",
+                "libGLESv2",
+                "libgralloc_extra",
+                "libhidlbase",
                 "android.hardware.graphics.common@1.0",
                 "android.hardware.graphics.common@1.1",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
-                "vendor.mediatek.hardware.camera.atms@1.0",
-                "libvndksupport",
-                "libhidlbase",
-                "libanc_dc_base",
-                "libalCFR",
-                "libarcsoft_beautyshot",
-                "libwa_widelens_undistort",
-                "libmpbase",
-                "libarcsoft_high_dynamic_range",
-                "libarcsoft_low_light_hdr",
-                "libmibokeh_mt6873",
-                "libwa_depth",
-                "libwa_refocus",
-                "libarcsoft_super_night_raw",
                 "libc++",
                 "libc",
                 "libm",
@@ -22971,7 +23018,9 @@ cc_prebuilt_library_shared {
                 "libmedia",
                 "libbase",
                 "libfmq",
+                "libbinder_ndk",
                 "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
                 "libhidlbase",
                 "libhidltransport",
                 "libimsma",
@@ -23011,7 +23060,9 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libnativehelper",
                 "libfmq",
+                "libbinder_ndk",
                 "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
                 "libhidlbase",
                 "libhidltransport",
                 "libui",
@@ -23110,7 +23161,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libsource.so",
             ],
             shared_libs: [
-                "libui_shim",
                 "libbinder",
                 "libcutils",
                 "libgui",
@@ -23215,6 +23265,33 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",

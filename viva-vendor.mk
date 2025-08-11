@@ -1009,6 +1009,7 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_mtk_msadpcmdec \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
+    libcom.xiaomi.pluginutils \
     libcomposer_ext \
     libconnfem \
     libcrypto-md \
@@ -1065,6 +1066,7 @@ PRODUCT_PACKAGES += \
     libmi_ldc_preview \
     libmi_videofilter \
     libmialgoengine \
+    libmialgoengine2 \
     libmibokeh_mt6873 \
     libmipc \
     libmmagent \
@@ -1278,6 +1280,7 @@ PRODUCT_PACKAGES += \
     libvcodec_cap \
     libvcodec_capenc \
     libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     ImsService \
     mediatek-common \
