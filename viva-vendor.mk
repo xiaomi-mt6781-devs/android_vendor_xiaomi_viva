@@ -175,7 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/viva/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/viva/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -616,7 +615,6 @@ PRODUCT_PACKAGES += \
     hi1634q_front_ofilm_mipi_raw_tuning \
     hi1634q_front_qtech_mipi_raw_IdxMgr \
     hi1634q_front_qtech_mipi_raw_tuning \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
@@ -1281,7 +1279,6 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     gbe \
     gsm0710muxd \
-    android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
